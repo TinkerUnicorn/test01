@@ -11,3 +11,5 @@ web.xml
 </web-app>
 
 ```
+连接数据库后面跟一个?serverTimezone=UTC
+否则报错
