@@ -18,6 +18,7 @@ public class TestMyBatisUtils {
         //获得sqlSession对象
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
         UserDao userDao = sqlSession.getMapper(UserDao.class);
+        System.out.println(userDao);
         List<User> userList = userDao.getUserList();
         for (User user : userList) {
             System.out.println(user);
