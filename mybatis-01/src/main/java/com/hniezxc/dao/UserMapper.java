@@ -7,6 +7,6 @@ import java.util.List;
 /**
  * @author zxc
  */
-public interface UserDao {
+public interface UserMapper {
     List<User> getUserList();
 }

@@ -1,6 +1,6 @@
 package com.hnie.utils;
 
-import com.hniezxc.dao.UserDao;
+import com.hniezxc.dao.UserMapper;
 import com.hniezxc.pojo.User;
 import com.hniezxc.utils.MyBatisUtils;
 import org.apache.ibatis.session.SqlSession;
@@ -17,7 +17,7 @@ public class TestMyBatisUtils {
     public void Test1(){
         //获得sqlSession对象
         SqlSession sqlSession = MyBatisUtils.getSqlSession();
-        UserDao userDao = sqlSession.getMapper(UserDao.class);
+        UserMapper userDao = sqlSession.getMapper(UserMapper.class);
         System.out.println(userDao);
         List<User> userList = userDao.getUserList();
         for (User user : userList) {

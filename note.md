@@ -13,7 +13,8 @@ web.xml
 ```
 连接数据库后面跟一个?serverTimezone=UTC
 否则报错
-#关于pom.xml得加上
+
+# 关于pom.xml得加上
 ```xml
 <build>
         <resources>
